@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(128, 128, 128);
+    display: flex;
+    flex-direction: column;
+}
+
+section.landing_page {
+    position: relative;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+
+
+}
+
+article.name_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+}
+
+div.whole_text {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 10%;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+    width: 90%;
+
+
+}
+
+.whole_text h1 {
+
+    font-size: 4em;
+
+}
+
+.whole_text h1 span {
+    color: white;
+    font-family: 'Mukta', sans-serif;
+    text-shadow: -1px 2px #ffba31, -1px 2px #ffba31, -1px -1px #ffba31, 1px -1px #ffba31;
+    font-weight: 400;
+    font-size: 78px;
+    border-radius: 30px;
+}
+
+.whole_text h2 {
+    font-size: 41px;
+    font-weight: 700;
+}
+
+.whole_text cite {
+    background-color: #ffba31;
+    font-weight: bolder;
+    font-size: 15px;
+    width: fit-content;
+
+    padding: 1%;
+
+
+}
+
+.whole_text p {
+    font-size: 22px;
+}
+
+.whole_text button {
+    background-color: #ffba31;
+
+
+    font-weight: bolder;
+    font-size: 20px;
+
+    border-radius: 30px;
+    width: fit-content;
+    padding: 20px;
+
+    color: white;
+    border: 1px solid white;
+
+}
+
+/* photo side page */
+
+article.photo {
+    background-image: url(/images/portrait_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(212, 212, 57);
+    width: 50%;
+    height: 30%;
+}
+
+/*nav */
+header {
+
+    position: absolute;
+    top: 20%;
+    right: 2%;
+
+
+    background-color: #ffba31;
+    border-radius: 30px;
+
+}
+
+nav.nav_icons {
+    padding: 2px
+}
+
+.nav_icons ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    list-style-type: none;
+
+}
+
+.nav_icons ul li {
+
+    font-size: 20px;
+    color: black;
+    margin: 5px;
+    padding: 5%;
+
+}
+
+.nav_icons ul li:hover {
+    color: aliceblue;
+
+
+}
+
+/********************media query **************************** */
+@media (max-width: 600px) {
+
+    /* article.name_info {
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: auto;
+
+        order: 3;
+    }
+
+    div.whole_text {
+        font-family: 'Roboto', sans-serif;
+        margin-top: 14%;
+        display: flex;
+        flex-direction: column;
+
+        gap: 15px;
+
+
+        width: 100%;
+
+    }
+
+    .whole_text h1 {
+
+        font-size: 3em;
+
+    }
+
+    .whole_text h1 span {
+        color: white;
+        font-family: 'Mukta', sans-serif;
+        text-shadow: -1px 2px #ffba31, -1px 2px #ffba31, -1px -1px #ffba31, 1px -1px #ffba31;
+        font-weight: 400;
+        font-size: 1em;
+        border-radius: 30px;
+    }
+
+   
+
+    article.photo {
+        background-image: url(/images/portrait_img.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        width: 50%;
+
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        order: 1;
+        border-radius: 0;
+
+        display: inline-flex;
+        top: 0%;
+        left: 0%;
+        background-color: #ffba31;
+        border-radius: 0px;
+
+    }
+
+
+    nav.nav_icons {
+        padding: 0;
+    }
+
+    .nav_icons ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+
+        list-style-type: none;
+
+    }
+
+    .nav_icons ul li {
+
+        font-size: 0.8em;
+        color: black;
+
+        padding: 2%;
+
+    }
+ */
+    section.landing_page {
+        height: 200vh;
+
+        flex-wrap: wrap;
+
+    }
+
+    article.name_info {
+
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+
+        /* Set the width of the flex item */
+        padding-bottom: 50%;
+        flex-basis: 100%;
+    }
+
+    article.photo {
+
+        width: 100vw;
+
+        background-size: cover;
+        flex-basis: 100%;
+    }
+
+
+
+
+}
